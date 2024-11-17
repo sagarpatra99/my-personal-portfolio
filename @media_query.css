@@ -1,0 +1,133 @@
+/* @media screen and (min-width: 320px) {
+    #url1{
+        background-image: url("./assets/certificate_1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #url2{
+        background-image: url("./assets/certificate_2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #url3{
+        background-image: url("./assets/certificate_3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #url4{
+        background-image: url("./assets/certificate_4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} */
+
+/* ###################################################################### */
+
+/* @media screen and (min-width: 285px) {
+  nav {
+    position: fixed;
+    color: #e9e9e9;
+    height: 10vh;
+    width: 100%;
+    padding: 0 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+  }
+
+  nav ul {
+    height: 90vh;
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    transform: translateX(-100%);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    gap: 20px;
+  }
+
+  nav #menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    transform: translateX(0);
+  }
+} */
+
+/*  */
+/* <button
+          class="border-2 px-6 py-1 bg-black text-white dark:text-black dark:bg-white 5x-sm:text-[10px] 5x-sm:px-4 5x-sm:py-1"
+          id="mode-toggle"
+          onclick="toggleMode()"
+        >
+          Dark
+        </button> */
+/*  */
+
+@media (max-width: 896px) {
+  /* Hide nav links by default on smaller screens */
+
+  nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4vw;
+    /* background-color: #333; */
+    /* color: #fff; */
+    z-index: 80;
+  }
+
+  .nav-links {
+    color: aliceblue;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #081b29;
+    /* background: transparent;
+    backdrop-filter: blur(10px); */
+    width: 100%;
+    text-align: center;
+    padding: 0 0;
+  }
+
+  /* Display menu icon */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Show nav links when menu-toggle is checked */
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hide the checkbox */
+  #menu-toggle {
+    display: none;
+  }
+
+  nav label {
+    order: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    font-size: 20px;
+  }
+}

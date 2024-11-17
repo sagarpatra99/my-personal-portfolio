@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="Icon" href="./assets/Me.png" />
+    <!-- output css -->
+    <link rel="stylesheet" href="output.css" />
+    <!-- style 2 -->
+    <link rel="stylesheet" href="style2.css" />
+    <!-- media query -->
+    <link rel="stylesheet" href="@media_query.css" />
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <!-- header (navbar) -->
+      <nav class="text-black dark:text-white">
+        <!-- nav logo -->
+        <div class="logo">&lt;&#47;Sagar&gt;</div>
+        <!-- dark night mode button -->
+        <button
+          class="border-2 px-6 py-1 bg-black text-white dark:text-black dark:bg-white 5x-sm:text-[10px] 5x-sm:px-4 5x-sm:py-1"
+          id="mode-toggle"
+          onclick="toggleMode()"
+        >
+          Dark
+        </button>
+        <!-- nav menu icon -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#certification">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- home section -->
+      <section
+        id="home"
+        class="px-[10vw] pt-[170px] text-center h-[100vh] dark:bg-[#081b29] dark:text-white transition-all ease-in duration-1000 5x-sm:px-1 5x-sm:pt-[80px] 5x-sm:h-fit 5x-sm:pb-[40px] 3x-sm:px-[4vw]"
+      >
+        <!-- first part of home -->
+        <div
+          class="flex justify-center items-center gap-[50px] text-start w-full 5x-sm:gap-2"
+        >
+          <!-- me image -->
+          <div class="w-[20%] 5x-sm:w-[40%] x-lg:w-[30%]">
+            <img src="./assets/Me.png" alt="" />
+          </div>
+          <!-- text section -->
+          <div class="w-[55%] x-lg:w-[65%]">
+            <div class="5x-sm:text-[10px] x-sm:text-[15px] sm:text-[15px]">
+              Hello I'm
+              <a
+                href="https://www.linkedin.com/in/thesagarpatra/"
+                class="text-[#7127BA]"
+                >Sagar Patra</a
+              >
+            </div>
+            <div
+              class="pt-[50px] 5x-sm:text-[10px] 5x-sm:pt-[20px] x-sm:text-[15px] md:[17px]"
+            >
+              A Designer Who
+            </div>
+            <div
+              class="text-[2.4rem] 5x-sm:text-[18px] x-sm:text-[25px] md:text-[35px] x-lg:text-[40px]"
+            >
+              Judge by a book by it's
+              <span class="text-[#7127BA]">cover</span>...
+            </div>
+            <!-- because text -->
+            <div
+              class="5x-sm:text-[10px] x-sm:text-[12px] sm:text-[15px] md:text-[17px]"
+            >
+              Because if the cover not impress you what else can?
+            </div>
+            <!-- Download Resume -->
+            <div id="resume" class="pt-10 5x-sm:pt-5">
+              <a
+                href="./assets/SAGAR-PATRA_Resume.pdf"
+                class="bg-purple-600 text-white mt-10 text-[13px] px-[30px] py-[7px] rounded-xl hover:bg-white border-2 border-purple-500 hover:border-purple-500 hover:text-purple-600 transition-all duration-500 5x-sm:text-[8px] 5x-sm:px-[15px] 5x-sm:py-[5px] 5x-sm:rounded-md 5x-sm:mt-0 x-sm:text-[12px]"
+                >View Resume</a
+              >
+            </div>
+            <!-- social icons starts -->
+            <div
+              class="text-[1.7rem] pt-[20px] space-x-10 5x-sm:text-[20px] 5x-sm:space-x-1 x-sm:space-x-2 x-sm:text-[25px]"
+            >
+              <a href="https://twitter.com">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="https://facebook.com">
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/sagarpatra948/">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://youtube.com">
+                <i class="ri-youtube-fill"></i>
+              </a>
+              <a href="https://github.com/Sagar-tech-coder">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/thesagarpatra/">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
+            <!-- social icons ends -->
+          </div>
+          <!-- blank section -->
+          <!-- <div class="w-[20%]"></div> -->
+        </div>
+        <!-- typer js -->
+        <div
+          class="typer text-[3rem] pt-[50px] 5x-sm:text-[25px] 5x-sm:pt-[30px] x-sm:text-[33px] x-lg:text-[50px]"
+        >
+          I'm a
+          <span class="text-[#7127BA]">Front-end Developer</span>
+        </div>
+        <div class="5x-sm:text-[12px] x-sm:text-[15px]">
+          Currently I'm learning MERN Stack Placement Gurantee Course from
+          Internshala Trainings
+        </div>
+      </section>
+      <!-- about section -->
+      <section
+        id="about-section"
+        class="w-full h-[60vh] flex px-[5vw] gap-5 dark:bg-[#081b29] dark:text-white transition-all ease-in duration-1000 5x-sm:h-fit 5x-sm:flex-col 5x-sm:px-[4vw] md:flex-row"
+      >
+        <!-- about profile image -->
+        <div
+          class="w-[30%] h-[340px] 5x-sm:w-full 5x-sm:h-[280px] 3x-sm:h-[360px] 2x-sm:h-[430px] x-sm:h-[520px] sm:h-[500px] md:w-[40%] md:h-[320px] lg:w-[30%] x-lg:w-[27%] 2xl:w-[30%] 2xl:h-[400px]"
+        >
+          <img
+            src="./assets/profile_pic.jpg"
+            class="rounded-xl h-full w-full"
+            alt=""
+          />
+        </div>
+        <!-- about-text -->
+        <div class="w-[70%] 5x-sm:w-full md:w-[55%] lg:w-[65%] x-lg:w-[70%]">
+          <h2
+            class="text-[#FFA500] text-[1.7rem] flex items-center 5x-sm:text-[18px] x-sm:text-[25px] md:text-[20px] lg:text-[23px] 2xl:text-[30px]"
+          >
+            A Bit About Me 🚀
+          </h2>
+          <p
+            class="5x-sm:text-[10px] x-sm:text-[15px] md:text-[12px] lg:text-[14px] 2xl:text-[18px]"
+          >
+            I'm a dedicated and passionate Front-end Developer with a strong
+            foundation in web technologies, recently completed my Bachelor in
+            Computer Applications (B.C.A.) from Techno India Institute of
+            Technology (TiiT), Kolkata, West Bengal. Currently pursuing a Master
+            in Computer Applications (M.C.A.) from Chandigarh University (CU),
+            Ludhiana, Punjab, I am eager to apply my technical skills and
+            creativity in a challenging Front-end Developer role<span
+              class="dot"
+              >...</span
+            >
+          </p>
+          <div
+            class="more-text 5x-sm:text-[10px] x-sm:text-[15px] md:text-[12px] lg:text-[14px] 2xl:text-[18px]"
+          >
+            <p>
+              Proficient in HTML, CSS, Tailwind CSS, JavaScript, and React.js
+              with Figma Software too, I have a solid understanding of creating
+              responsive, user-friendly web interfaces. I am committed to
+              writing clean, efficient code and continuously learning the latest
+              advancements in front-end technologies. My academic journey and
+              self-driven projects have equipped me with the ability to
+              transform wireframes and design concepts into interactive,
+              high-performance applications.
+            </p>
+            <br />
+            <p
+              class="5x-sm:text-[10px] x-sm:text-[15px] md:text-[12px] lg:text-[14px] 2xl:text-[18px]"
+            >
+              I am now seeking an opportunity to contribute to a dynamic
+              development team, where I can further hone my skills and
+              contribute to innovative projects that enhance user experience.
+            </p>
+          </div>
+          <button
+            class="text-[#0984e3] 5x-sm:text-[12px] x-sm:text-[20px] md:text-[15px] 2xl:text-[20px]"
+            onclick="myFunction()"
+            id="more-btn"
+          >
+            Read More...
+          </button>
+        </div>
+      </section>
+      <!-- skills section -->
+      <section
+        id="skills-section"
+        class="w-full dark:bg-[#081b29] dark:text-white transition-all ease-in duration-1000"
+      >
+        <h2
+          class="text-[2rem] text-center 5x-sm:text-[20px] 2x-sm:text-[25px] 3x-sm:underline 3x-sm:underline-offset-[13px] x-sm:text-[28px] 2xl:text-[40px]"
+        >
+          My <span class="text-[#7127BA]">Skills</span>
+        </h2>
+        <div
+          id="skills"
+          class="w-full flex gap-[10%] px-[5vw] 5x-sm:flex-col md:flex-row"
+        >
+          <!-- technical linear bars -->
+          <div class="linear-bars w-[40%] 5x-sm:w-full">
+            <!-- heading flex main -->
+            <div class="text-center 5x-sm:my-5">
+              <!-- linear bars heading -->
+              <h3
+                class="inline px-5 text-white bg-orange-500 rounded-lg 5x-sm:text-[12px] x-sm:text-[15px] md:text-[13px] lg:text-[15px] 2xl:text-[20px]"
+              >
+                Technical Skills
+              </h3>
+            </div>
+            <!-- bar 1 -->
+            <div class="bar text-[25px]">
+              <i class="ri-html5-fill text-[#c95d2e] 2xl:text-[50px]"></i>
+              <div class="info mb-[5px]">
+                <span class="text-[17px] font-medium 2xl:text-[20px]"
+                  >HTML5</span
+                >
+              </div>
+              <div class="linear-line html h-[6px] 2xl:h-[8px]">
+                <span></span>
+              </div>
+            </div>
+            <!-- bar 2 -->
+            <div class="bar text-[25px] my-10">
+              <i class="ri-css3-fill text-[#147bbc] 2xl:text-[50px]"></i>
+              <div class="info mb-[5px]">
+                <span class="text-[17px] font-medium 2xl:text-[20px]"
+                  >CSS3</span
+                >
+              </div>
+              <div class="linear-line css h-[6px] 2xl:h-[8px]">
+                <span></span>
+              </div>
+            </div>
+            <!-- bar 3 -->
+            <div class="bar text-[25px]">
+              <i
+                class="ri-tailwind-css-fill text-[#38BDF8] 2xl:text-[50px]"
+              ></i>
+              <div class="info mb-[5px]">
+                <span class="text-[17px] font-medium 2xl:text-[20px]"
+                  >Tailwind CSS</span
+                >
+              </div>
+              <div class="linear-line tailwind h-[6px] 2xl:h-[8px]">
+                <span></span>
+              </div>
+            </div>
+            <!-- bar 4 -->
+            <div class="bar text-[25px] my-10">
+              <i class="ri-javascript-fill text-[#EFD81D] 2xl:text-[50px]"></i>
+              <div class="info mb-[5px]">
+                <span class="text-[17px] font-medium 2xl:text-[20px]"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="linear-line js h-[6px] 2xl:h-[8px]">
+                <span></span>
+              </div>
+            </div>
+            <!-- bar 5 -->
+            <div class="bar text-[25px]">
+              <i class="ri-reactjs-line text-[#48CEF7] 2xl:text-[50px]"></i>
+              <div class="info mb-[5px]">
+                <span class="text-[17px] font-medium 2xl:text-[20px]"
+                  >React.js</span
+                >
+              </div>
+              <div class="linear-line react h-[6px] 2xl:h-[8px]">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <!-- professional bars (container) -->
+          <div
+            class="circular-bars w-[50%] text-center 5x-sm:w-full 5x-sm:my-10"
+          >
+            <!-- professional bars heading -->
+            <h3
+              class="inline text-center px-5 text-white bg-orange-500 rounded-lg 5x-sm:text-[12px] x-sm:text-[15px] md:text-[13px] lg:text-[15px] 2xl:text-[20px]"
+            >
+              Professional Skills
+            </h3>
+            <!-- circular flex main -->
+            <div
+              class="flex flex-wrap gap-8 items-center justify-center pt-[70px] 5x-sm:pt-[40px]"
+            >
+              <!-- circular bar main 1 -->
+              <div
+                class="relative flex justify-center items-center w-[180px] h-[180px] rounded-full 5x-sm:h-[100px] 5x-sm:w-[100px] x-sm:h-[140px] x-sm:w-[140px] 2xl:h-[200px] 2xl:w-[200px]"
+              >
+                <div class="box">
+                  <p class="number">
+                    <span
+                      class="text-[35px] font-bold num 5x-sm:text-[20px] 2xl:text-[50px]"
+                      >70</span
+                    >
+                    <span
+                      class="sub text-[20px] 5x-sm:text-[10px] 2xl:text-[30px]"
+                      >%</span
+                    >
+                  </p>
+                  <p
+                    class="text-[#9b9b9b] text-[12px] 5x-sm:text-[10px] x-sm:text-[13px] xl:text-[17px]"
+                  >
+                    Team Work
+                  </p>
+                </div>
+                <span class="dots"></span>
+              </div>
+              <!-- circular bar main 2 -->
+              <div
+                class="relative flex justify-center items-center w-[180px] h-[180px] rounded-full 5x-sm:h-[100px] 5x-sm:w-[100px] x-sm:h-[140px] x-sm:w-[140px] 2xl:h-[200px] 2xl:w-[200px]"
+              >
+                <div class="box">
+                  <p class="number">
+                    <span
+                      class="text-[35px] font-bold num 5x-sm:text-[20px] 2xl:text-[50px]"
+                      >65</span
+                    >
+                    <span class="text-[20px] 5x-sm:text-[10px] 2xl:text-[30px]"
+                      >%</span
+                    >
+                  </p>
+                  <p
+                    class="text-[#9b9b9b] text-[12px] 5x-sm:text-[10px] x-sm:text-[13px] 2xl:text-[17px]"
+                  >
+                    Creativity
+                  </p>
+                </div>
+                <span class="dots"></span>
+              </div>
+              <!-- circular bar main 3 -->
+              <div
+                class="relative flex justify-center items-center w-[180px] h-[180px] rounded-full 5x-sm:h-[100px] 5x-sm:w-[100px] x-sm:h-[140px] x-sm:w-[140px] 2xl:h-[200px] 2xl:w-[200px]"
+              >
+                <div class="box">
+                  <p class="number">
+                    <span
+                      class="text-[35px] font-bold num 5x-sm:text-[20px] 2xl:text-[50px]"
+                      >79</span
+                    >
+                    <span class="text-[20px] 5x-sm:text-[10px] 2xl:text-[30px]"
+                      >%</span
+                    >
+                  </p>
+                  <p
+                    class="text-[#9b9b9b] text-[12px] 5x-sm:text-[10px] x-sm:text-[13px] 2xl:text-[17px]"
+                  >
+                    Problem Solving
+                  </p>
+                </div>
+                <span class="dots"></span>
+              </div>
+              <!-- circular bar main 4 -->
+              <div
+                class="relative flex justify-center items-center w-[180px] h-[180px] rounded-full 5x-sm:h-[100px] 5x-sm:w-[100px] x-sm:h-[140px] x-sm:w-[140px] 2xl:h-[200px] 2xl:w-[200px]"
+              >
+                <div class="box">
+                  <p class="number">
+                    <span
+                      class="text-[35px] font-bold num 5x-sm:text-[20px] 2xl:text-[50px]"
+                      >93</span
+                    >
+                    <span class="text-[20px] 5x-sm:text-[10px] 2xl:text-[30px]"
+                      >%</span
+                    >
+                  </p>
+                  <p
+                    class="text-[#9b9b9b] text-[12px] 5x-sm:text-[10px] x-sm:text-[13px] 2xl:text-[17px]"
+                  >
+                    Communication
+                  </p>
+                </div>
+                <span class="dots"></span>
+              </div>
+              <!-- circular bar main 5 -->
+              <div
+                class="relative flex justify-center items-center w-[180px] h-[180px] rounded-full 5x-sm:h-[100px] 5x-sm:w-[100px] x-sm:h-[140px] x-sm:w-[140px] 2xl:h-[200px] 2xl:w-[200px]"
+              >
+                <div class="box">
+                  <p class="number">
+                    <span
+                      class="text-[35px] font-bold num 5x-sm:text-[20px] 2xl:text-[50px]"
+                      >82</span
+                    >
+                    <span class="text-[20px] 5x-sm:text-[10px] 2xl:text-[30px]"
+                      >%</span
+                    >
+                  </p>
+                  <p
+                    class="text-[#9b9b9b] text-[12px] 5x-sm:text-[10px] x-sm:text-[13px] 2xl:text-[17px]"
+                  >
+                    Leadership
+                  </p>
+                </div>
+                <span class="dots"></span>
+              </div>
+              <!-- circular bar main 6 -->
+              <div
+                class="relative flex justify-center items-center w-[180px] h-[180px] rounded-full 5x-sm:h-[100px] 5x-sm:w-[100px] x-sm:h-[140px] x-sm:w-[140px] 2xl:h-[200px] 2xl:w-[200px]"
+              >
+                <div class="box">
+                  <p class="number">
+                    <span
+                      class="text-[35px] font-bold num 5x-sm:text-[20px] 2xl:text-[50px]"
+                      >86</span
+                    >
+                    <span class="text-[20px] 5x-sm:text-[10px] 2xl:text-[30px]"
+                      >%</span
+                    >
+                  </p>
+                  <p
+                    class="text-[#9b9b9b] text-[12px] 5x-sm:text-[10px] x-sm:text-[13px] 2xl:text-[17px]"
+                  >
+                    Organization
+                  </p>
+                </div>
+                <span class="dots"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- certification section -->
+      <section
+        id="certification"
+        class="w-full px-[5vw] py-[5vh] dark:bg-[#081b29] dark:text-white transition-all ease-in duration-1000 5x-sm:px-[vw] 4x-sm:px-[3vw] x-sm:px-[5vw] x-md:px-[2vw]"
+      >
+        <!-- certificate heading -->
+        <h2
+          class="text-[2rem] py-[5vh] text-fuchsia-600 5x-sm:text-[20px] 5x-sm:py-[2vh] 3x-sm:underline 3x-sm:decoration-black 3x-sm:underline-offset-8 2x-sm:text-[25px] x-sm:text-[30px] 2xl:text-[40px]"
+        >
+          Certifications
+        </h2>
+        <!-- certification flex main -->
+        <div
+          class="flex items-center justify-center gap-[22px] 5x-sm:flex-col md:flex-row md:flex-wrap"
+        >
+          <!-- certificate main 1 -->
+          <div
+            class="h-[283px] w-[320px] flex flex-col border-2 p-2 5x-sm:w-full 5x-sm:h-[225px] 5x-sm:p-1 4x-sm:h-[250px] 4x-sm:w-[300px] 3x-sm:h-[310px] 3x-sm:w-[365px] 2x-sm:h-[345px] 2x-sm:w-[420px] x-sm:w-[490px] x-sm:h-[395px] md:w-[320px] md:h-[270px] x-md:w-[420px] x-md:h-[350px] lg:w-[480px] lg:h-[395px] x-lg:w-[350px] x-lg:h-[295px]"
+          >
+            <div
+              id="url1"
+              class="url w-full h-full flex items-center justify-center"
+            >
+              <a
+                href="https://trainings.internshala.com/view_certificate/a933f8twxvq/a4yrqjd0g92/"
+                class="text-center px-5 py-2"
+                >View <i class="ri-external-link-line"></i
+              ></a>
+            </div>
+            <p class="text-center">Let's Begin with Full Stack</p>
+            <!-- <a href="#" class="text-center bg-blue-500 px-5 py-2"
+              >View <i class="ri-external-link-line"></i
+            ></a> -->
+          </div>
+          <!-- certificate main 2 -->
+          <div
+            class="h-[283px] w-[320px] flex flex-col border-2 p-2 5x-sm:w-full 5x-sm:h-[225px] 5x-sm:p-1 4x-sm:h-[250px] 4x-sm:w-[300px] 3x-sm:h-[310px] 3x-sm:w-[365px] 2x-sm:h-[345px] 2x-sm:w-[420px] x-sm:w-[490px] x-sm:h-[395px] md:w-[320px] md:h-[270px] x-md:w-[420px] x-md:h-[350px] lg:w-[480px] lg:h-[395px] x-lg:w-[350px] x-lg:h-[295px]"
+          >
+            <div
+              id="url2"
+              class="url w-full h-full flex items-center justify-center"
+            >
+              <a
+                href="https://www.hackerrank.com/certificates/27c37d719c26?utm_medium=email&utm_source=mail_template_1393&utm_campaign=hrc_skills_certificate"
+                class="text-center px-5 py-2"
+                >View <i class="ri-external-link-line"></i
+              ></a>
+            </div>
+            <p class="text-center">Python (Basic) Certificate</p>
+            <!-- <a href="#" class="text-center bg-blue-500 px-5 py-2"
+              >View <i class="ri-external-link-line"></i
+            ></a> -->
+          </div>
+          <!-- certificate main 3 -->
+          <div
+            class="h-[283px] w-[320px] flex flex-col border-2 p-2 5x-sm:w-full 5x-sm:h-[225px] 5x-sm:p-1 4x-sm:h-[250px] 4x-sm:w-[300px] 3x-sm:h-[310px] 3x-sm:w-[365px] 2x-sm:h-[345px] 2x-sm:w-[420px] x-sm:w-[490px] x-sm:h-[395px] md:w-[320px] md:h-[270px] x-md:w-[420px] x-md:h-[350px] lg:w-[480px] lg:h-[395px] x-lg:w-[350px] x-lg:h-[295px]"
+          >
+            <div
+              id="url3"
+              class="url w-full h-full flex items-center justify-center"
+            >
+              <a
+                href="https://www.udemy.com/certificate/UC-3ceb509c-977e-4304-a693-e80de091c99d/"
+                class="text-center px-5 py-2"
+                >View <i class="ri-external-link-line"></i
+              ></a>
+            </div>
+            <p class="text-center">UI/UX Certificate</p>
+            <!-- <a href="#" class="text-center bg-blue-500 px-5 py-2"
+              >View <i class="ri-external-link-line"></i
+            ></a> -->
+          </div>
+          <!-- certificate main 4 -->
+          <div
+            class="h-[283px] w-[320px] flex flex-col border-2 p-2 5x-sm:w-full 5x-sm:h-[225px] 5x-sm:p-1 4x-sm:h-[250px] 4x-sm:w-[300px] 3x-sm:h-[310px] 3x-sm:w-[365px] 2x-sm:h-[345px] 2x-sm:w-[420px] x-sm:w-[490px] x-sm:h-[395px] md:w-[320px] md:h-[270px] x-md:w-[420px] x-md:h-[350px] lg:w-[480px] lg:h-[395px] x-lg:w-[350px] x-lg:h-[295px]"
+          >
+            <div
+              id="url4"
+              class="url w-full h-full flex items-center justify-center"
+            >
+              <a
+                href="https://learn.kodekloud.com/certificate/2D0AFF5248D0-2D0AFF243134-2D0AF91F3828"
+                class="text-center px-5 py-2"
+                >View <i class="ri-external-link-line"></i
+              ></a>
+            </div>
+            <p class="text-center">Python Basics Certificate</p>
+            <!-- <a href="#" class="text-center bg-blue-500 px-5 py-2"
+              >View <i class="ri-external-link-line"></i
+            ></a> -->
+          </div>
+        </div>
+      </section>
+      <!-- projects section -->
+      <section
+        id="projects"
+        class="px-[5vw] w-full dark:bg-[#081b29] dark:text-white transition-all ease-in duration-1000 space-y-[30px] lg:px-[4vw] x-lg:px-[5vw]"
+      >
+        <h2
+          class="text-[2rem] py-[5vh] 5x-sm:text-[20px] 5x-sm:py-[1vh] 5x-sm:underline 5x-sm:underline-offset-8 5x-sm:decoration-black dark:decoration-white 3x-sm:underline 3x-sm:underline-offset-8 2x-sm:text-[25px] x-sm:text-[30px] 2xl:text-[40px]"
+        >
+          What <span class="text-orange-500">I build so far</span>
+        </h2>
+        <!-- project main div -->
+        <div class="lg:px-[7vw] x-lg:px-[10vw] 2xl:space-y-[50px]">
+          <!-- project box container (main) 1 -->
+          <div
+            class="h-fit w-full py-[3rem] flex items-center justify-center 5x-sm:flex-col 5x-sm:py-[1rem] md:flex-row"
+          >
+            <!-- project left -->
+            <div
+              class="project-left pt-[80px] h-[350px] w-[35%] text-left z-20 5x-sm:w-[100%] 5x-sm:pt-[0] 5x-sm:h-fit 3x-sm:pr-[20%] md:w-[50%] md:pr-[0]"
+            >
+              <!-- featured project text -->
+              <div
+                class="featured-text text-[#7127ba] font-bold 5x-sm:text-[12px] 2x-sm:text-[15px] 2xl:text-[20px]"
+              >
+                <a
+                  href="https://fascinating-pavlova-51f685.netlify.app/"
+                  class="text-[#7127ba]"
+                  >View Project</a
+                >
+              </div>
+              <!-- example proejct text -->
+              <div
+                class="example-text text-[1.5rem] font-bold 5x-sm:text-[15px] 2x-sm:text-[20px] 2xl:text-[28px]"
+              >
+                Ecolabs Project
+              </div>
+              <!-- project desc -->
+              <div
+                class="project-desc text-white px-[15px] py-[10px] rounded-[10px] text-left bg-[#1a0b2e] 5x-sm:text-[12px] 2xl:text-[18px] 2xl:px-[20px] 2xl:py-[15px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nesciunt dicta? Assumenda, inventore, beatae explicabo nulla
+                modi nemo facere, possimus a blanditiis rem adipisci minus neque
+                ex dignissimos doloremque ullam.
+              </div>
+            </div>
+            <!-- project right -->
+            <div
+              class="project-right h-[380px] w-[30%] flex flex-row-reverse text-right items-end border-2 border-[#2b0b3a] bg-[#2b0b3a] 5x-sm:w-[100%] 5x-sm:h-[310px] 3x-sm:pl-[10%] 3x-sm:rounded-t-[10px] 2x-sm:h-[330px] x-sm:h-[400px] md:w-[50%] md:pl-[5%] md:h-[350px] 2xl:h-[410px]"
+            >
+              <img
+                src="./assets/EcoLabs.png"
+                alt=""
+                class="h-[350px] w-[370px] 5x-sm:w-full 5x-sm:h-[280px] 2x-sm:h-[290px] x-sm:h-[360px] md:h-[315px] 2xl:h-[370px]"
+              />
+            </div>
+          </div>
+          <!-- project box container (main-reverse) 2 -->
+          <div
+            class="h-fit w-full py-[3rem] flex flex-row-reverse items-center justify-center 5x-sm:flex-col 5x-sm:py-[1rem] md:flex-row-reverse"
+          >
+            <!-- project left -->
+            <div
+              class="project-left-reverse pt-[80px] h-[350px] w-[35%] text-right 5x-sm:w-full 5x-sm:pt-[0] 5x-sm:h-fit 3x-sm:pl-[20%] md:w-[50%] md:pl-[0]"
+            >
+              <!-- featured project text -->
+              <div
+                class="featured-text text-[#7127ba] font-bold 5x-sm:text-[12px] 2x-sm:text-[15px] 2xl:text-[20px]"
+              >
+                <a
+                  href="https://taupe-licorice-6d6e68.netlify.app/"
+                  class="text-[#7127ba]"
+                  >View Project</a
+                >
+              </div>
+              <!-- example proejct text -->
+              <div
+                class="example-text text-[1.5rem] font-bold 5x-sm:text-[15px] 2x-sm:text-[20px] 2xl:text-[28px]"
+              >
+                TicTacToe Project
+              </div>
+              <!-- project desc -->
+              <div
+                class="project-desc text-white px-[15px] py-[10px] rounded-[10px] text-left bg-[#1a0b2e] 5x-sm:text-[12px] 2xl:text-[18px] 2xl:px-[20px] 2xl:py-[15px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nesciunt dicta? Assumenda, inventore, beatae explicabo nulla
+                modi nemo facere, possimus a blanditiis rem adipisci minus neque
+                ex dignissimos doloremque ullam.
+              </div>
+            </div>
+            <!-- project right -->
+            <div
+              class="project-right h-[380px] w-[30%] flex text-right items-end border-2 border-[#2b0b3a] bg-[#2b0b3a] 5x-sm:w-full 5x-sm:h-[310px] 3x-sm:pr-[10%] 3x-sm:rounded-t-[10px] 2x-sm:h-[330px] x-sm:h-[400px] md:w-[50%] md:pr-[5%] md:h-[350px] 2xl:h-[410px]"
+            >
+              <img
+                src="./assets/TicTac.png"
+                alt=""
+                class="h-[350px] w-[370px] 5x-sm:w-full 5x-sm:h-[280px] 2x-sm:h-[290px] x-sm:h-[360px] md:h-[315px] 2xl:h-[370px]"
+              />
+            </div>
+          </div>
+          <!-- project box container (main) 3 -->
+          <div
+            class="h-fit w-full py-[3rem] flex items-center justify-center 5x-sm:flex-col 5x-sm:py-[1rem] md:flex-row"
+          >
+            <!-- project left -->
+            <div
+              class="project-left pt-[80px] h-[350px] w-[35%] text-left z-20 5x-sm:w-[100%] 5x-sm:pt-[0] 5x-sm:h-fit 3x-sm:pr-[20%] md:w-[50%] md:pr-[0]"
+            >
+              <!-- featured project text -->
+              <div
+                class="featured-text text-[#7127ba] font-bold 5x-sm:text-[12px] 2x-sm:text-[15px] 2xl:text-[20px]"
+              >
+                <a
+                  href="https://sagarcalculate.netlify.app/"
+                  class="text-[#7127ba]"
+                  >View Project</a
+                >
+              </div>
+              <!-- example proejct text -->
+              <div
+                class="example-text text-[1.5rem] font-bold 5x-sm:text-[15px] 2x-sm:text-[20px] 2xl:text-[28px]"
+              >
+                Calculator Project
+              </div>
+              <!-- project desc -->
+              <div
+                class="project-desc text-white px-[15px] py-[10px] rounded-[10px] text-left bg-[#1a0b2e] 5x-sm:text-[12px] 2xl:text-[18px] 2xl:px-[20px] 2xl:py-[15px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nesciunt dicta? Assumenda, inventore, beatae explicabo nulla
+                modi nemo facere, possimus a blanditiis rem adipisci minus neque
+                ex dignissimos doloremque ullam.
+              </div>
+            </div>
+            <!-- project right -->
+            <div
+              class="project-right h-[380px] w-[30%] flex flex-row-reverse text-right items-end border-2 border-[#2b0b3a] bg-[#2b0b3a] 5x-sm:w-[100%] 5x-sm:h-[310px] 3x-sm:pl-[10%] 3x-sm:rounded-t-[10px] 2x-sm:h-[330px] x-sm:h-[400px] md:w-[50%] md:pl-[5%] md:h-[350px] 2xl:h-[410px]"
+            >
+              <img
+                src="./assets/cal.png"
+                alt=""
+                class="h-[350px] w-[370px] 5x-sm:w-full 5x-sm:h-[280px] 2x-sm:h-[290px] x-sm:h-[360px] md:h-[315px] 2xl:h-[370px]"
+              />
+            </div>
+          </div>
+          <!-- project box container (main-reverse) 4 -->
+          <div
+            class="h-fit w-full py-[3rem] flex flex-row-reverse items-center justify-center 5x-sm:flex-col 5x-sm:py-[1rem] md:flex-row-reverse"
+          >
+            <!-- project left -->
+            <div
+              class="project-left-reverse pt-[80px] h-[350px] w-[35%] text-right 5x-sm:w-full 5x-sm:pt-[0] 5x-sm:h-fit 3x-sm:pl-[20%] md:w-[50%] md:pl-[0]"
+            >
+              <!-- featured project text -->
+              <div
+                class="featured-text text-[#7127ba] font-bold 5x-sm:text-[12px] 2x-sm:text-[15px] 2xl:text-[20px]"
+              >
+                <a
+                  href="https://blog-website-intern.netlify.app/"
+                  class="text-[#7127ba]"
+                  >View Project</a
+                >
+              </div>
+              <!-- example proejct text -->
+              <div
+                class="example-text text-[1.5rem] font-bold 5x-sm:text-[15px] 2x-sm:text-[20px] 2xl:text-[28px]"
+              >
+                Blog Project
+              </div>
+              <!-- project desc -->
+              <div
+                class="project-desc text-white px-[15px] py-[10px] rounded-[10px] text-left bg-[#1a0b2e] 5x-sm:text-[12px] 2xl:text-[18px] 2xl:px-[20px] 2xl:py-[15px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nesciunt dicta? Assumenda, inventore, beatae explicabo nulla
+                modi nemo facere, possimus a blanditiis rem adipisci minus neque
+                ex dignissimos doloremque ullam.
+              </div>
+            </div>
+            <!-- project right -->
+            <div
+              class="project-right h-[380px] w-[30%] flex text-right items-end border-2 border-[#2b0b3a] bg-[#2b0b3a] 5x-sm:w-full 5x-sm:h-[310px] 3x-sm:pr-[10%] 3x-sm:rounded-t-[10px] 2x-sm:h-[330px] x-sm:h-[400px] md:w-[50%] md:pr-[5%] md:h-[350px] 2xl:h-[410px]"
+            >
+              <img
+                src="./assets/blog.png"
+                alt=""
+                class="h-[350px] w-[370px] 5x-sm:w-full 5x-sm:h-[280px] 2x-sm:h-[290px] x-sm:h-[360px] md:h-[315px] 2xl:h-[370px]"
+              />
+            </div>
+          </div>
+          <!-- project box container (main) 5 -->
+          <div
+            class="h-fit w-full py-[3rem] flex items-center justify-center 5x-sm:flex-col 5x-sm:py-[1rem] md:flex-row"
+          >
+            <!-- project left -->
+            <div
+              class="project-left pt-[80px] h-[350px] w-[35%] text-left z-20 5x-sm:w-[100%] 5x-sm:pt-[0] 5x-sm:h-fit 3x-sm:pr-[20%] md:w-[50%] md:pr-[0]"
+            >
+              <!-- featured project text -->
+              <div
+                class="featured-text text-[#7127ba] font-bold 5x-sm:text-[12px] 2x-sm:text-[15px] 2xl:text-[20px]"
+              >
+                <a
+                  href="https://shopper-alpha-sage.vercel.app/"
+                  class="text-[#7127ba]"
+                  >View Project</a
+                >
+              </div>
+              <!-- example proejct text -->
+              <div
+                class="example-text text-[1.5rem] font-bold 5x-sm:text-[15px] 2x-sm:text-[20px] 2xl:text-[28px]"
+              >
+                E-Commerce Project
+              </div>
+              <!-- project desc -->
+              <div
+                class="project-desc text-white px-[15px] py-[10px] rounded-[10px] text-left bg-[#1a0b2e] 5x-sm:text-[12px] 2xl:text-[18px] 2xl:px-[20px] 2xl:py-[15px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nesciunt dicta? Assumenda, inventore, beatae explicabo nulla
+                modi nemo facere, possimus a blanditiis rem adipisci minus neque
+                ex dignissimos doloremque ullam.
+              </div>
+            </div>
+            <!-- project right -->
+            <div
+              class="project-right h-[380px] w-[30%] flex flex-row-reverse text-right items-end border-2 border-[#2b0b3a] bg-[#2b0b3a] 5x-sm:w-[100%] 5x-sm:h-[310px] 3x-sm:pl-[10%] 3x-sm:rounded-t-[10px] 2x-sm:h-[330px] x-sm:h-[400px] md:w-[50%] md:pl-[5%] md:h-[350px] 2xl:h-[410px]"
+            >
+              <img
+                src="./assets/shopper.png"
+                alt=""
+                class="h-[350px] w-[370px] 5x-sm:w-full 5x-sm:h-[280px] 2x-sm:h-[290px] x-sm:h-[360px] md:h-[315px] 2xl:h-[370px]"
+              />
+            </div>
+          </div>
+          <!-- project box container (main-reverse) 6 -->
+          <div
+            class="h-fit w-full py-[3rem] flex flex-row-reverse items-center justify-center 5x-sm:flex-col 5x-sm:py-[1rem] md:flex-row-reverse"
+          >
+            <!-- project left -->
+            <div
+              class="project-left-reverse pt-[80px] h-[350px] w-[35%] text-right 5x-sm:w-full 5x-sm:pt-[0] 5x-sm:h-fit 3x-sm:pl-[20%] md:w-[50%] md:pl-[0]"
+            >
+              <!-- featured project text -->
+              <div
+                class="featured-text text-[#7127ba] font-bold 5x-sm:text-[12px] 2x-sm:text-[15px] 2xl:text-[20px]"
+              >
+                <a
+                  href="https://65059383ef6fec04d6b2c42f--inquisitive-beijinho-efced1.netlify.app/"
+                  class="text-[#7127ba]"
+                  >View Project</a
+                >
+              </div>
+              <!-- example proejct text -->
+              <div
+                class="example-text text-[1.5rem] font-bold 5x-sm:text-[15px] 2x-sm:text-[20px] 2xl:text-[28px]"
+              >
+                Color Changer Project
+              </div>
+              <!-- project desc -->
+              <div
+                class="project-desc text-white px-[15px] py-[10px] rounded-[10px] text-left bg-[#1a0b2e] 5x-sm:text-[12px] 2xl:text-[18px] 2xl:px-[20px] 2xl:py-[15px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                nesciunt dicta? Assumenda, inventore, beatae explicabo nulla
+                modi nemo facere, possimus a blanditiis rem adipisci minus neque
+                ex dignissimos doloremque ullam.
+              </div>
+            </div>
+            <!-- project right -->
+            <div
+              class="project-right h-[380px] w-[30%] flex text-right items-end border-2 border-[#2b0b3a] bg-[#2b0b3a] 5x-sm:w-full 5x-sm:h-[310px] 3x-sm:pr-[10%] 3x-sm:rounded-t-[10px] 2x-sm:h-[330px] x-sm:h-[400px] md:w-[50%] md:pr-[5%] md:h-[350px] 2xl:h-[410px]"
+            >
+              <img
+                src="./assets/colorChange.png"
+                alt=""
+                class="h-[350px] w-[370px] 5x-sm:w-full 5x-sm:h-[280px] 2x-sm:h-[290px] x-sm:h-[360px] md:h-[315px] 2xl:h-[370px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section
+        id="contact"
+        class="w-full px-[5vw] py-[5vh] flex flex-col dark:bg-[#081b29] dark:text-white transition-all ease-in duration-1000 lg:px-[10vw] x-lg:px-[5vw]"
+      >
+        <h2
+          class="text-[2rem] py-[5vh] 5x-sm:text-[20px] 5x-sm:py-[1vh] 3x-sm:underline 3x-sm:underline-offset-8 2x-sm:text-[25px] x-sm:text-[30px] md:mb-[20px]"
+        >
+          <span class="text-lime-600">Contact</span> Me
+        </h2>
+        <form action="" class="">
+          <div
+            class="flex items-center justify-center gap-5 pb-8 5x-sm:flex-col 5x-sm:pb-0 x-lg:flex-row"
+          >
+            <label for="f-name" class="w-full"
+              >First Name :
+              <input
+                type="text"
+                id="f-name"
+                placeholder="Enter first name"
+                class="border-2 px-3 py-2 dark:bg-slate-800 w-full"
+              />
+            </label>
+            <label for="m-name" class="w-full"
+              >Middle Name :
+              <input
+                type="text"
+                id="m-name"
+                placeholder="Enter middle name"
+                class="border-2 px-3 py-2 dark:bg-slate-800 w-full"
+              />
+            </label>
+            <label for="l-name" class="w-full"
+              >Last Name :
+              <input
+                type="text"
+                id="l-name"
+                placeholder="Enter last name"
+                class="border-2 px-3 py-2 dark:bg-slate-800 w-full"
+              />
+            </label>
+            <label for="email" class="w-full"
+              >Email :
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email address"
+                class="border-2 px-3 py-2 dark:bg-slate-800 w-full"
+              />
+            </label>
+          </div>
+          <br />
+          <label for="message" class="w-full"
+            >Message :
+            <textarea
+              name="message"
+              id="message"
+              class="w-full border-2 h-28 px-[10px] py-[7px] dark:bg-slate-800"
+              placeholder="Type your message here..."
+            ></textarea>
+          </label>
+          <!-- submit button -->
+          <div class="text-center pt-[40px] 4x-sm:pt-[10px]">
+            <button
+              type="submit"
+              class="bg-blue-600 text-white hover:rounded-xl transition-all duration-500 px-[30px] py-[10px] 4x-sm:px-[25px] 4x-sm:py-[8px] 4x-sm:text-[12px] x-lg:text-[17px] x-lg:px-[30px]"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- footer section -->
+      <footer
+        class="w-full px-[5vw] py-[5vh] dark:bg-[#081b29] dark:text-white transition-all ease-in duration-1000 5x-sm:px-[5vw] 5x-sm:py-[1vh] lg:px-[10vw] x-lg:px-[5vw]"
+      >
+        <h2
+          class="text-[2rem] py-[5vh] text-amber-500 5x-sm:text-[20px] 5x-sm:py-[2vh] 3x-sm:underline 3x-sm:decoration-black 3x-sm:underline-offset-8 2x-sm:text-[25px] x-sm:text-[30px]"
+        >
+          Footer
+        </h2>
+        <!-- footer flex main -->
+        <div
+          class="flex items-center justify-between gap-10 5x-sm:flex-col 5x-sm:items-start 5x-sm:gap-0 x-lg:px-[3vw]"
+        >
+          <!-- flex box 1 -->
+          <div class="5x-sm:mb-5 x-sm:mb-3 sm:mb-8">
+            <!-- call now -->
+            <div class="call mb-10 5x-sm:mb-4 x-sm:mb-5 sm:mb-6">
+              <a
+                href="tel:8789345121"
+                class="text-green-600 border-2 border-[green] px-[30px] py-[5px] rounded-md hover:bg-green-600 hover:text-white transition-all duration-500 5x-sm:px-[15px] 5x-sm:py-[2px] 5x-sm:text-[12px] x-sm:text-[14px] x-sm:py-[4px] x-sm:px-[20px]"
+                >Call Me <i class="ri-phone-fill"></i
+              ></a>
+            </div>
+            <!-- email now -->
+            <div class="email">
+              <a
+                href="mailto:sagarpatra641@gmail.com"
+                class="bg-blue-500 text-white border-2 border-blue-500 px-[30px] py-[5px] rounded-md hover:shadow-xl hover:text-blue-500 hover:border-[2px] hover:border-[blue] hover:bg-white transition-all duration-500 5x-sm:px-[15px] 5x-sm:py-[2px] 5x-sm:text-[12px] x-sm:text-[14px] x-sm:py-[4px] x-sm:px-[20px]"
+                >Email Me <i class="ri-mail-send-fill"></i
+              ></a>
+            </div>
+          </div>
+          <!-- flex box 3 -->
+          <div>
+            <div class="x-sm:text-[25px]">Social Links :-</div>
+            <div
+              class="text-[1.7rem] space-x-10 5x-sm:text-[20px] 5x-sm:space-x-2 x-sm:text-[25px]"
+            >
+              <a href="https://twitter.com">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="https://facebook.com">
+                <i class="ri-facebook-box-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/sagarpatra948/">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://youtube.com">
+                <i class="ri-youtube-fill"></i>
+              </a>
+              <a href="https://github.com/Sagar-tech-coder">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/thesagarpatra/">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- copyright text -->
+      <div
+        class="bg-slate-300 py-[10px] text-center dark:bg-slate-700 dark:text-white transition-all ease-in duration-1000 5x-sm:text-[10px] x-sm:text-[12px] md:text-[15px]"
+      >
+        Copyright © 2024 | Developed by
+        <a
+          href="https://www.linkedin.com/in/thesagarpatra/"
+          class="text-[#7127BA]"
+          >Sagar</a
+        >
+        | All Rights Reserved
+      </div>
+    </div>
+    <!-- adding script js -->
+    <script src="script.js"></script>
+  </body>
+</html>
