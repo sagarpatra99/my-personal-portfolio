@@ -245,3 +245,63 @@ nav {
 nav button {
   order: 2;
 }
+
+.html {
+  color: #d2691e;
+}
+
+.css {
+  color: #1572b6;
+}
+
+.tailwind {
+  color: #19b2b9;
+}
+
+.js {
+  color: #ebd968;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.f {
+  color: #f74b11;
+}
+
+.i {
+  color: #b056f7;
+}
+
+.g {
+  color: #00b6f7;
+}
+
+.m {
+  color: #f76f5e;
+}
+
+.a {
+  color: #00c97b;
+}
+
+.software {
+  color: #026fef;
+}
+
+.tiit {
+  color: red;
+}
+
+.cu {
+  color: rgb(255, 0, 0);
+}
+
+.bca {
+  text-shadow: 2px 2px 6px #ff0000;
+}
+
+.mca {
+  text-shadow: 2px 2px 5px #ff0000;
+}
