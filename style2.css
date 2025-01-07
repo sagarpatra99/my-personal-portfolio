@@ -135,6 +135,24 @@ body {
   background-color: #b7b5b5;
 }
 
+#url1_javascript {
+  background-image: url("./assets/javascript.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#url1_github {
+  background-image: url("./assets/git_hub.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#url1_html {
+  background-image: url("./assets/html_css.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #url1 {
   background-image: url("./assets/certificate_1.png");
   background-size: contain;
