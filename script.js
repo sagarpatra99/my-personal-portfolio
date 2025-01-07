@@ -30,3 +30,19 @@ function myFunction() {
 
 let links = document.querySelector("#myLinks");
 let input_check = document.querySelector("#check");
+
+var typed = new Typed("#typed-element", {
+  strings: [
+    "Front-end Developer",
+    "JavaScript Developer",
+    "React.js Developer",
+    "Web Developer",
+  ],
+  typeSpeed: 70,
+  deleteSpeed: 50,
+  delaySpeed: 1000,
+  backSpeed: 70,
+  // backDelay: 500,
+  // startDelay: 1000,
+  loop: true,
+});
