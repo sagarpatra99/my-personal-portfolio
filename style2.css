@@ -323,3 +323,33 @@ nav button {
 .mca {
   text-shadow: 2px 2px 5px #ff0000;
 }
+
+.m {
+  color: #3f9939;
+  font-weight: bold;
+}
+
+.e {
+  color: #000000;
+  font-weight: bold;
+}
+
+.r {
+  color: #00adef;
+  font-weight: bold;
+}
+
+.n {
+  color: #4db03f;
+  font-weight: bold;
+}
+
+.stack {
+  color: #000000;
+  font-weight: bold;
+}
+
+.internshala {
+  color: #01a1e5;
+  font-weight: bold;
+}
