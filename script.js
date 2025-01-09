@@ -46,3 +46,31 @@ var typed = new Typed("#typed-element", {
   // startDelay: 1000,
   loop: true,
 });
+
+// ###############################################################################
+// ###############################################################################
+
+// Check user preference or default to light mode
+const userPrefersDark = window.matchMedia(
+  "(prefers-color-scheme: dark)"
+).matches;
+const rootElement = document.documentElement;
+
+if (userPrefersDark) {
+  rootElement.classList.add("dark");
+} else {
+  rootElement.classList.remove("dark");
+}
+
+// Toggle dark mode manually
+const toggleDarkMode = () => {
+  rootElement.classList.toggle("dark");
+};
+
+// Example: Attach to a button click
+document
+  .getElementById("dark-mode-toggle")
+  .addEventListener("click", toggleDarkMode);
+
+// ###############################################################################
+// ###############################################################################
